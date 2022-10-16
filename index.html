@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Race</title>
+    <style type="text/css">
+        body{
+                background-image: url("bg.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                margin: 0;
+        }
+        .birds img{
+            animation-name: birds;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes birds{
+            0%{
+                transform:translatex(1050px)
+            }
+            100%{
+                transform:translatex(-300px)
+            }
+        }
+        .race{
+            padding-top: 150px;
+            animation-name: race;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes race{
+            0%{
+                transform:translatex(-100px)
+            }
+            100%{
+                transform:translatex(1200px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="road">
+        <div class="birds">
+            <img src="birds.gif" width="16%">
+        </div>
+        <div class="race">
+            <img src="1.gif" width="26%">
+            <img src="2.gif" width="22%">
+            <img src="3.gif" width="16%">
+            <img src="4.gif" width="25%">
+    </div>
+</body>
+</html>
